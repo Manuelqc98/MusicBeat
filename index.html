@@ -25,26 +25,43 @@
 <body>
     <!-- Titulo, botones y opciones-->
     <header>
-        <nav>
-            <span>MusicBeat <img src="assets/Logo musicbeat.svg" alt=""></span>
-            <input type="search" value="Buscar">
-            <input type="button" value="Mi Perfil">
+        <nav class="contenido">
+            <section class="contenido__titulo">
+                <span class="contenido__titulo__nombre">
+                    MusicBeat
+                    <img src="assets/Logo musicbeat.svg" alt="" class="contenido__titulo__logo">
+                </span>
+            </section>
+            <section class="contenido__opciones">
+                <div class="contenido__opciones__botones">
+                    <input type="search" value="Buscar" class="contenido__opciones__botones__buscar">
+                    <input type="button" value="Mi Perfil" class="contenido__opciones__botones__perfil">
+                </div>
 
-            <ul>
-                <h2>Biblioteca</h2>
-                <li><img src="assets/Musica.svg" alt="">
-                    <p>Canciones</p>
-                </li>
-                <li><img src="assets/Album.svg" alt="">
-                    <p>Álbumes</p>
-                </li>
-                <li><img src="assets/Lista de reprod.svg" alt="">
-                    <p>Lista de reproducción</p>
-                </li>
-                <li><img src="assets/Explorar.svg" alt="">
-                    <p>Explorar</p>
-                </li>
-            </ul>
+                <ul class="contenido__opciones__li">
+                    <h2 class="contenido__opciones__titulo">Biblioteca</h2>
+                    <div>
+                        <li class="contenido__opciones__li__img">
+                            <img src="assets/Musica.svg" alt="">
+                            <p>Canciones</p>
+                        </li>
+                        <li class="contenido__opciones__li__img">
+                            <img src="assets/Album.svg" alt="">
+                            <p>Álbumes</p>
+                        </li>
+                        <li class="contenido__opciones__li__img">
+                            <img src="assets/Lista de reprod.svg" alt="">
+                            <p>Lista de reproducción</p>
+                        </li>
+                        <li class="contenido__opciones__li__img">
+                            <img src="assets/Explorar.svg" alt="">
+                            <p>Explorar</p>
+                        </li>
+                    </div>
+
+                </ul>
+            </section>
+
         </nav>
     </header>
 
@@ -109,7 +126,9 @@
                     </div>
                     <img src="assets/Favorita.svg" alt="">
                 </div>
-                <div></div>
+                <div>
+                    <img src="assets/lineareprod.svg" alt="">
+                </div>
                 <div>
                     <p>2:51</p>
                     <p>-0:36</p>
@@ -126,3 +145,4 @@
         </section>
 
     </main>
+</body>
