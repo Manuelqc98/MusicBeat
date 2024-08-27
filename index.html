@@ -25,7 +25,7 @@
 <body>
     <!-- Titulo, botones y opciones-->
     <header>
-        <nav class="contenido">
+        <nav class="contenido__inicio">
             <section class="contenido__titulo">
                 <span class="contenido__titulo__nombre">
                     MusicBeat
@@ -38,25 +38,28 @@
                     <input type="button" value="Mi Perfil" class="contenido__opciones__botones__perfil">
                 </div>
 
-                <ul class="contenido__opciones__li">
+                <ul>
                     <h2 class="contenido__opciones__titulo">Biblioteca</h2>
-                    <div>
-                        <li class="contenido__opciones__li__img">
+                    <div class="contenido__opciones__li">
+                        <div class="opciones">
                             <img src="assets/Musica.svg" alt="">
-                            <p>Canciones</p>
-                        </li>
-                        <li class="contenido__opciones__li__img">
+                            <li>Canciones</li>
+                        </div>
+
+                        <div class="opciones">
                             <img src="assets/Album.svg" alt="">
                             <p>Álbumes</p>
-                        </li>
-                        <li class="contenido__opciones__li__img">
+                        </div>
+
+                        <div class="opciones">
                             <img src="assets/Lista de reprod.svg" alt="">
                             <p>Lista de reproducción</p>
-                        </li>
-                        <li class="contenido__opciones__li__img">
+                        </div>
+
+                        <div class="opciones">
                             <img src="assets/Explorar.svg" alt="">
                             <p>Explorar</p>
-                        </li>
+                        </div>
                     </div>
 
                 </ul>
@@ -73,80 +76,89 @@
                     <div class="musica__lista">
                         <!-- Canción 1 -->
                         <div class="musica__contenido">
-                            <img src="assets/Wait for U.jpg" alt="" class="musica__img">
+
                             <div class="musica__contenido__nombre">
-                                <p>Wait for U</p>
-                                <p>Future ft. Drake</p>
+                                <img src="assets/Wait for U.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+
+                                    <h3>Wait for U</h3>
+                                    <p>Future ft. Drake</p>
+
+                                </div>
+                                
+                                <img src="assets/play (2).svg" alt="">
                             </div>
+
+
                         </div>
-                        <img src="assets/play (2).svg" alt="">
+
+
                         <!-- Canción 2 -->
                         <div class="musica__contenido">
-                            <img src="assets/Passoa.jpg" alt="" class="musica__img">
+
                             <div class="musica__contenido__nombre">
-                                <p>Passoa</p>
-                                <p>Jhayco ft. Kapo</p>
+                                <img src="assets/Passoa.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+                                    <h3>Passoa</h3>
+                                    <p>Jhayco ft. Kapo</p>
+                                </div>
+
+                                <img src="assets/play (2).svg" alt="">
+
                             </div>
                         </div>
-                        <img src="assets/play (2).svg" alt="">
+
                         <!-- Canción 3 -->
                         <div class="musica__contenido">
-                            <img src="assets/Playa priv.jpg" alt="" class="musica__img">
+
                             <div class="musica__contenido__nombre">
-                                <p>Playa Privada</p>
-                                <p>Mora ft. ELENA ROSE</p>
+                                <img src="assets/Playa priv.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+                                    <h3>Playa Privada</h3>
+                                    <p>Mora </p>
+                                </div>
+
+                                <img src="assets/play (2).svg" alt="">
+
                             </div>
+
                         </div>
-                        <img src="assets/play (2).svg" alt="">
+
                         <!-- Canción 4 -->
                         <div class="musica__contenido">
-                            <img src="assets/Un deseo.jpg" alt="" class="musica__img">
+
                             <div class="musica__contenido__nombre">
-                                <p>Un deseo</p>
-                                <p>Mora ft. RaiNao</p>
+                                <img src="assets/Un deseo.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+                                    <h3>Un deseo</h3>
+                                    <p>Mora ft. RaiNao</p>
+                                </div>
+                                
+                                <img src="assets/play (2).svg" alt="">
+
                             </div>
+
+
                         </div>
-                        <img src="assets/play (2).svg" alt="">
-                        <!-- Canción 5 -->
-                        <div class="musica__contenido">
-                            <img src="assets/Maya.jpg" alt="" class="musica__img">
-                            <div class="musica__contenido__nombre">
-                                <p>Maya (Remix)</p>
-                                <p>De la Rose, Mora, Sharif Rafael</p>
-                            </div>
-                        </div>
-                        <img src="assets/play (2).svg" alt="">
-                        <!-- Canción 6 -->
-                        <div class="musica__contenido">
-                            <img src="assets/powfu.jpg" alt="" class="musica__img">
-                            <div class="musica__contenido__nombre">
-                                <p>Death bed</p>
-                                <p>Powfu</p>
-                            </div>
-                        </div>
-                        <img src="assets/play (2).svg" alt="">
-                        <!-- Canción 7 -->
-                        <div class="musica__contenido">
-                            <img src="assets/Drake.jpg" alt="" class="musica__img">
-                            <div class="musica__contenido__nombre">
-                                <p>Passionfruit</p>
-                                <p>Drake</p>
-                            </div>
-                        </div>
-                        <img src="assets/play (2).svg" alt="">
 
                     </div>
                 </div>
             </div>
-            <!-- Reproductor -->
+        </section>
+        <!-- Reproductor -->
+        <section class="reproductor__ubicacion">
             <div class="reproductor">
                 <img src="assets/Wait for U.jpg" alt="" class="reproductor__img">
                 <div class="reproductor__container">
                     <div class="reproductor__nombre">
                         <p class="reproductor__nombre__music">Wait for U</p>
-                        <p class="reproductor__nombre__artist">Future ft. Drake</p>    
+                        <p class="reproductor__nombre__artist">Future ft. Drake</p>
                     </div>
-                    <img src="assets/Favorita.svg" alt="">                    
+                    <img src="assets/Favorita.svg" alt="">
                 </div>
                 <div class="reproductor__linea">
                     <img src="assets/lineareprod.svg" alt="">
