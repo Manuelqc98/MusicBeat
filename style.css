@@ -141,7 +141,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 70px 20px;
+    padding: 35px 17px;
     margin: 100px 59px;
     border-radius: 35px;
     background-image: linear-gradient(#2e2e2e00, #1D542C);
@@ -155,7 +155,6 @@ main {
     display: flex;
     flex-direction: column;
     color: white;
-    justify-content:;
 }
 
 .reproductor__nombre__music {
