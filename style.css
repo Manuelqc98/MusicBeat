@@ -24,10 +24,19 @@ header {
     font-size: 48px;
     font-weight: 500;
     color: white;
+    margin: 0px 10px 0px 18px;
 }
 
 .contenido__titulo__logo {
     size: 56px 36.5px;
+}
+
+.lista__contenido {
+    padding: 64px 0px;
+}
+
+.contenido__opciones {
+    padding: 64px 21px;
 }
 
 .contenido__opciones__botones {
@@ -35,6 +44,7 @@ header {
     flex-direction: column;
     align-items: start;
     justify-content: start;
+    gap: 64px;
 }
 
 .contenido__opciones__botones__buscar {
@@ -43,38 +53,48 @@ header {
     background-color: #2e2e2e75;
     color: white;
     border-color: white;
-    border: 2px solid #ffffff66;
+    border: 2px solid #ffffff;
     border-radius: 5px
 
 }
 
 .contenido__opciones__botones__perfil {
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
-    background-color: #2e2e2e75;
+    background-color: #1e1e1e;
+    border-radius: 35px;
+    width: 170px;
+    height: 45px;
 }
 
 .contenido__opciones__titulo {
     font-size: 29px;
     font-weight: 600;
     color: white;
+    margin: 0px 0px 25px;
 }
 
 .opciones {
     display: flex;
     align-items: end;
     gap: 10px;
-
+    padding: 14px 0px;
     font-size: 19px;    
     font-weight: lighter;
 }
 
+main {
+    display: flex;
+    justify-content: end;
+    background-image: url(assets/Main.png);
+}
+
 .musica__lista {
-    gap: 19px;
+    gap: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 .musica__img {
@@ -92,7 +112,7 @@ header {
     align-items: start;
     justify-content: space-between;
     height: 75px;
-    width: 315px;
+    width: 599px;
 }
 
 
@@ -102,6 +122,7 @@ header {
     font-weight: bold;
     padding: 10px 90px 10px 8px;
     color: white;
+    justify-content: start;
 }
 
 .cancion__artista h3 {
@@ -119,8 +140,8 @@ header {
     height: 740px;
     display: flex;
     flex-direction: column;
-    gap: 29px;
-    padding: 20px 20px;
+    gap: 16px;
+    padding: 70px 20px;
     margin: 100px 59px;
     border-radius: 35px;
     background-image: linear-gradient(#2e2e2e00, #1D542C);
@@ -134,6 +155,7 @@ header {
     display: flex;
     flex-direction: column;
     color: white;
+    justify-content:;
 }
 
 .reproductor__nombre__music {
@@ -149,7 +171,7 @@ header {
 .reproductor__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .reproductor__linea {
@@ -180,8 +202,4 @@ header {
     font-size: 19px;
 }
 
-main {
-    display: flex;
-    justify-content: end;
-    background-image: url(assets/Main.png);
-}
+
