@@ -23,7 +23,6 @@ axios.get('https://leonardoapi.onrender.com/songs')
 
                                 </div>
                                 
-                                <img src="assets/play (2).svg" alt="">
                 </div>
             
             `
