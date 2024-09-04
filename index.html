@@ -18,6 +18,7 @@
 
     <title>MusicBeat</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <!-- Body tiene el contenido visual -->
@@ -40,7 +41,7 @@
 
                 <ul class="lista__contenido">
                     <h2 class="contenido__opciones__titulo">Biblioteca</h2>
-                    <div>
+                    <div class="opciones__li">
                         <div class="opciones">
                             <img src="assets/Musica.svg" alt="">
                             <li>Canciones</li>
@@ -73,7 +74,7 @@
         <section>
             <div>
                 <div>
-                    <div class="musica__lista">
+                    <div id="track-list"  class="musica__lista">
                         <!-- Canción 1 -->
                         <div class="musica__contenido">
 
@@ -180,4 +181,5 @@
         </section>
 
     </main>
+    <script src="script.js"></script>
 </body>
