@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Metadatos de la página -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="música, sonido, auriculares, alta calidad, streaming, lista de reproducción, música online, música offline, música premium, ecualizador">
+
+    <meta name="description"
+        content="Sumérgete en un sonido de alta calidad con nuestro reproductor de música. Disfruta de cada momento con una claridad y profundidad inigualables en cada canción">
+
+    <link rel="shortcut icon" href="/assets/Logo musicbeat.svg" type="image/x-icon">
+
+    <title>MusicBeat</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<!-- Body tiene el contenido visual -->
+
+<body>
+    <!-- Titulo, botones y opciones-->
+    <header>
+        <nav class="contenido__inicio">
+            <section>
+                <span class="contenido__titulo__nombre">
+                    MusicBeat
+                    <img src="assets/Logo musicbeat.svg" alt="" class="contenido__titulo__logo">
+                </span>
+            </section>
+            <section class="contenido__opciones">
+                <div class="contenido__opciones__botones">
+                    <input type="search" value="Buscar" class="contenido__opciones__botones__buscar">
+                    <input type="button" value="Mi Perfil" class="contenido__opciones__botones__perfil">
+                </div>
+
+                <ul class="lista__contenido">
+                    <h2 class="contenido__opciones__titulo">Biblioteca</h2>
+                    <div class="opciones__li">
+                        <div class="opciones">
+                            <img src="assets/Musica.svg" alt="">
+                            <li>Canciones</li>
+                        </div>
+
+                        <div class="opciones">
+                            <img src="assets/Album.svg" alt="">
+                            <p>Álbumes</p>
+                        </div>
+
+                        <div class="opciones">
+                            <img src="assets/Lista de reprod.svg" alt="">
+                            <p>Lista de reproducción</p>
+                        </div>
+
+                        <div class="opciones">
+                            <img src="assets/Explorar.svg" alt="">
+                            <p>Explorar</p>
+                        </div>
+                    </div>
+
+                </ul>
+            </section>
+
+        </nav>
+    </header>
+
+    <!-- Lista de canciones y reproductor -->
+    <main>
+        <section>
+            <div>
+                <div>
+                    <div id="track-list" class="musica__lista">
+                        <!-- Canción 1 -->
+                        <div class="musica__contenido">
+
+                            <div class="musica__contenido__nombre">
+                                <img src="assets/Wait for U.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+
+                                    <h3>Wait for U</h3>
+                                    <p>Future ft. Drake</p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- Canción 2 -->
+                        <div class="musica__contenido">
+
+                            <div class="musica__contenido__nombre">
+                                <img src="assets/Passoa.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+                                    <h3>Passoa</h3>
+                                    <p>Jhayco ft. Kapo</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Canción 3 -->
+                        <div class="musica__contenido">
+
+                            <div class="musica__contenido__nombre">
+                                <img src="assets/Playa priv.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+                                    <h3>Playa Privada</h3>
+                                    <p>Mora </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Canción 4 -->
+                        <div class="musica__contenido">
+
+                            <div class="musica__contenido__nombre">
+                                <img src="assets/Un deseo.jpg" alt="" class="musica__img">
+
+                                <div class="cancion__artista">
+                                    <h3>Un deseo</h3>
+                                    <p>Mora ft. RaiNao</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reproductor -->
+        <section class="reproductor__ubicacion">
+            <div class="reproductor">
+                <img src="assets/Wait for U.jpg" alt="" class="reproductor__img">
+                <div class="reproductor__container">
+                    <div class="reproductor__nombre">
+                        <p class="reproductor__nombre__music">Wait for U</p>
+                        <p class="reproductor__nombre__artist">Future ft. Drake</p>
+                    </div>
+                </div>
+                <div class="reproductor__linea">
+                    <img src="assets/lineareprod.svg" alt="" class="reproductor__linea">
+                </div>
+                <div class="reproductor__duracion">
+                    <p>2:51</p>
+                    <p>-0:36</p>
+                </div>
+                <div class="reproductor__botones">
+                    <img src="assets/Aleatorio.svg" alt="">
+                    <div class="reproductor__botones__play">
+                        <img src="assets/atras.svg" alt="">
+                        <img src="assets/playdetener.svg" alt="">
+                        <img src="assets/siguiente.svg" alt="">
+                    </div>
+                    <img src="assets/añadir a lista.svg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>

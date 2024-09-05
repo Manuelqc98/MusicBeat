@@ -1,0 +1,221 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+
+    margin: unset;
+    padding: unset;
+    border: unset;
+
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: #2e2e2e;
+    height: 841px;
+    width: 300px;
+}
+
+.contenido__titulo__nombre {
+    font-size: 42px;
+    font-weight: 500;
+    color: white;
+    margin: 0px 10px 0px 18px;
+}
+
+.contenido__titulo__logo {
+    size: 56px 36.5px;
+}
+
+.lista__contenido {
+    padding: 55px 0px;
+}
+
+.contenido__opciones {
+    padding: 64px 21px;
+}
+
+.contenido__opciones__botones {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 55px;
+}
+
+.contenido__opciones__botones__buscar {
+    font-size: 19px;
+    font-weight: lighter;
+    background-color: #2e2e2e75;
+    color: white;
+    border-color: white;
+    border: 2px solid #ffffff;
+    border-radius: 5px
+
+}
+
+.contenido__opciones__botones__perfil {
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    background-color: #1e1e1e;
+    transition: background-color 0.5s;
+    border-radius: 35px;
+    width: 170px;
+    height: 45px;
+}
+  
+.contenido__opciones__botones__perfil:hover {
+    background-color: #008d26;
+}
+
+.contenido__opciones__titulo {
+    font-size: 29px;
+    font-weight: 600;
+    color: white;
+    margin: 0px 0px 25px;
+}
+
+.opciones {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    padding: 14px 0px;
+    font-size: 16px;    
+    font-weight: lighter;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: end;
+    background-image: url(assets/fondo\ main.png);
+    background-color: #1e1e1e;
+}
+
+.musica__lista {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;   
+}
+
+.musica__img {
+    height: 69px;
+    width: 73px;
+    object-fit: cover;
+}
+
+
+.musica__contenido__nombre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.musica__contenido__nombre :hover {
+    color: #008d26;
+}
+
+.cancion__artista {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-weight: bold;
+    padding: 10px 200px 20px 15px;
+    margin-top: 20px;
+    color: white;
+}
+
+.cancion__artista h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cancion__artista p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+.reproductor {
+    width: 356px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+    padding: 35px 17px;
+    margin: 33.5px 30px;
+    border-radius: 35px;
+    background-image: linear-gradient(#2e2e2e00, #1D542C);
+    position: sticky;
+    top: 5px;
+}
+
+.reproductor__img {
+    border-radius: 35px;
+    width: 100%;
+}
+
+.reproductor__nombre {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.reproductor__nombre__music {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.reproductor__nombre__artist {
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+
+.reproductor__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reproductor__linea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.reproductor__duracion {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.reproductor__botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 47px;
+}
+
+.reproductor__botones__play {
+    display: flex;
+    gap: 35px;
+}
+
+.contenido__opciones__li {
+    color: white;
+    font-size: 19px;
+}
+
+
