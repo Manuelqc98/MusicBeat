@@ -21,14 +21,10 @@ axios.get('https://api.institutoalfa.org/api/songs')
                         <p>${song.author}</p>
                     </div>
                 </div>
-            
             `
 
             container.appendChild(div)
-
         })
-
-
     })
 
 
