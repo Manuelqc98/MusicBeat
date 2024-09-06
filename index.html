@@ -33,11 +33,11 @@
                     <img src="assets/Logo musicbeat.svg" alt="" class="contenido__titulo__logo">
                 </span>
             </section>
-            <section class="contenido__opciones">
-                <div class="contenido__opciones__botones">
-                    <input type="search" placeholder="Buscar" class="contenido__opciones__botones__buscar">
-                    <input type="button" value="Mi Perfil" class="contenido__opciones__botones__perfil">
-                </div>
+            <section class="contenido__opciones" >
+                <form class="contenido__opciones__botones" action="/">
+                    <input type="search" placeholder="Buscar" class="contenido__opciones__botones__buscar" name="query">
+                    <button type="submit" class="contenido__opciones__botones__perfil">Buscar</button>
+                </form>
 
                 <ul class="lista__contenido">
                     <h2 class="contenido__opciones__titulo">Biblioteca</h2>
@@ -83,16 +83,16 @@
                     </div>
                 </div>
 
-                <audio src="" controls id="current-song-audio"></audio>
+                <audio src="" controls id="current-song-audio" autoplay></audio>
 
-                <div class="reproductor__linea">
+                <!-- <div class="reproductor__linea">
                     <img src="assets/lineareprod.svg" alt="" class="reproductor__linea">
-                </div>
-                <div class="reproductor__duracion">
+                </div> -->
+                <!-- <div class="reproductor__duracion">
                     <p>2:51</p>
                     <p>-0:36</p>
-                </div>
-                <div class="reproductor__botones">
+                </div> -->
+                <!-- <div class="reproductor__botones">
                     <img src="assets/Aleatorio.svg" alt="">
                     <div class="reproductor__botones__play">
                         <img src="assets/atras.svg" alt="">
@@ -100,7 +100,7 @@
                         <img src="assets/siguiente.svg" alt="">
                     </div>
                     <img src="assets/añadir a lista.svg" alt="">
-                </div>
+                </div> -->
             </div>
         </section>
         

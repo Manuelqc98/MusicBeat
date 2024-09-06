@@ -1,5 +1,6 @@
+const query = new URLSearchParams(window.location.search).get("query")
 
-axios.get('https://api.institutoalfa.org/api/songs')
+axios.get('https://api.institutoalfa.org/api/songs?query=' + query)
     .then(function (response) {
         // manejar respuesta exitosa
         console.log(response.data.songs);
