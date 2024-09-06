@@ -1,5 +1,5 @@
 
-axios.get('https://leonardoapi.onrender.com/songs')
+axios.get('https://api.institutoalfa.org/api/songs')
     .then(function (response) {
         // manejar respuesta exitosa
         console.log(response.data.songs);
@@ -14,15 +14,12 @@ axios.get('https://leonardoapi.onrender.com/songs')
 
             div.innerHTML = `
                 <div class="musica__contenido__nombre">
-                                <img src="${song.path.front}" alt="" class="musica__img">
+                    <img src="https://api.institutoalfa.org/api/songs/image/${song.image.filename}" alt="" class="musica__img">
 
-                                <div class="cancion__artista">
-
-                                    <h3>${song.title}</h3>
-                                    <p>${song.author}</p>
-
-                                </div>
-                                
+                    <div class="cancion__artista">
+                        <h3>${song.title}</h3>
+                        <p>${song.author}</p>
+                    </div>
                 </div>
             
             `

@@ -1,6 +1,6 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 
 
     margin: unset;
@@ -10,13 +10,25 @@
     box-sizing: border-box;
     list-style: none;
 
+    outline: unset;
+
+}
+
+body {
+    
+    background-color: #1e1e1e;
+    background-image: url(assets/fondo\ main.png);
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    display: flex;
 }
 
 header {
     display: flex;
-    position: fixed;
     background-color: #2e2e2e;
-    height: 841px;
+    height: 100%;
     width: 300px;
 }
 
@@ -55,7 +67,6 @@ header {
     border-color: white;
     border: 2px solid #ffffff;
     border-radius: 5px
-
 }
 
 .contenido__opciones__botones__perfil {
@@ -68,7 +79,7 @@ header {
     width: 170px;
     height: 45px;
 }
-  
+
 .contenido__opciones__botones__perfil:hover {
     background-color: #008d26;
 }
@@ -85,7 +96,7 @@ header {
     align-items: end;
     gap: 10px;
     padding: 14px 0px;
-    font-size: 16px;    
+    font-size: 16px;
     font-weight: lighter;
     color: white;
 }
@@ -93,8 +104,9 @@ header {
 main {
     display: flex;
     justify-content: end;
-    background-image: url(assets/fondo\ main.png);
-    background-color: #1e1e1e;
+    /* min-height: 100vh; */
+    height: 100%;
+    flex-grow: 1;
 }
 
 .musica__lista {
@@ -102,7 +114,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;   
+    align-items: start;
+    flex-grow: 1;
+
+    height: 100%;
+    overflow-y: auto;
 }
 
 .musica__img {
@@ -146,7 +162,7 @@ main {
 
 .reproductor {
     width: 356px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -218,4 +234,6 @@ main {
     font-size: 19px;
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
