@@ -20,7 +20,6 @@ axios.get('https://api.institutoalfa.org/api/songs')
                         <h3>${song.title}</h3>
                         <p>${song.author}</p>
                     </div>
-
                 </div>
             `
 
